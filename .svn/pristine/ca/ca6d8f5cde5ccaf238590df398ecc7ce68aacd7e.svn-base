@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="百利玛服务系统">
+    <meta charset="UTF-8">
+    <title>百利玛服务系统-登录页面</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+   <div>
+
+   </div>
+<div class="pop up"></div>
+</body>
+<script src="common/jquery-1.11.1.min.js"></script>
+<script src="js/login.js"></script>
+</html>

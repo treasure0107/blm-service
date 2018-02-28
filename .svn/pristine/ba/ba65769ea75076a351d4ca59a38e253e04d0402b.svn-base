@@ -1,0 +1,34 @@
+//点击删除
+$(".delete_btn").click(function () {
+
+});
+
+//点击标题
+$(".news_tit").click(function () {
+    $(".main_con").hide();
+    $(".mail_con").css("display","block")
+});
+
+$(".delImg").click(function () {
+    $(".main_con").show();
+    $(".mail_con").hide();
+});
+
+//分页
+$('.page_icon').pagination({
+    showData:8,      //每页显示的条数
+    count:2,
+    coping:true,
+    keepShowPN:true
+});
+
+// callback:function(api){
+//     var data = {
+//         page: api.getCurrent(),
+//         name: 'mss',
+//         say: 'oh'
+//     };
+//     $.getJSON('http://localhost:3000/data.json',data,function(json){
+//         console.log(json);
+//     });
+// }

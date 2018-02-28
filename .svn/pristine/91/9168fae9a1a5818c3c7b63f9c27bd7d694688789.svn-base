@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>消息中心</title>
+    <link rel="stylesheet" href="../common/style/base.css">
+    <link rel="stylesheet" href="../common/style/bootstrap.min.css">
+    <link rel="stylesheet" href="../common/style/public.css">
+    <link rel="stylesheet" href="../css/messageCenter.css">
+</head>
+<body>
+<div class="commonMain">
+    <div class="main_con">
+        <div class="news_search">
+            <p class="news_search_t">订单查询</p>
+            <div class="search_con">
+                <span class="key_word">标题</span>
+                <input type="text" placeholder="请输入标题" id="keywords">
+                <buttton class="search_btn">查询</buttton>
+            </div>
+        </div>
+        <!--表格内容-->
+        <div class="news_content">
+
+            <table class="news_table">
+                <thead>
+                <tr>
+                    <th>序列</th>
+                    <th>时间</th>
+                    <th class="news_tit">发送人</th>
+                    <th class="news_con">标题</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody class="news_table_tr">
+                <!--<tr>-->
+                    <!--<td class="serial_num">1</td>-->
+                    <!--<td>2017-09-09</td>-->
+                    <!--<td class="news_sender">百利玛</td>-->
+                    <!--<td class="news_tit">百利玛店庆</td>-->
+                    <!--<td><a class="delete_btn" href="javascript:void(0);">删除</a></td>-->
+                <!--</tr>-->
+                </tbody>
+            </table>
+            <div class="popUpData" style="display: none;text-align: center;padding-top: 30px;">暂时还没有数据哦~</div>
+            <div class="news_foot">
+                <!--<span class="news_total">合计：10000000,000</span>-->
+                <div class="page_icon">
+                    <!--<a href="javascript:void(0);" class="prevPage">&lt;</a>-->
+                    <!--<span>1</span>-->
+                    <!--<span>2</span>-->
+                    <!--<span>3</span>-->
+                    <!--<span>...</span>-->
+                    <!--<span>12</span>-->
+                    <!--<a href="javascript:void(0);" class="lastPage">&gt;</a>-->
+                    <!--共120条记录-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--邮件-->
+    <div class="mail_con">
+        <div class="basic_news">
+            <h2 class="mail_tit">租金缴纳通知</h2>
+            <span class="delImg"><img src="../images/message_icon_turn_off.png" alt=""></span>
+            <span>发件人：</span><span class="senderName" style="color:#7b7de4;font-weight: bold;">百利玛总部</span><br>
+            <span>时间：</span><span class="senderTime">2017年12月25日</span><br>
+            <span>收件人：</span><span class="merchantName">BLM001</span><br>
+        </div>
+        <div class="mail_content">
+
+        </div>
+    </div>
+</div>
+
+<div class="pop_up"></div>
+<script id="newsCenterList" type="text/x-jquery-tmpl">
+      <tr>
+         <td class="serial_num">${indexNum}</td>
+         <td>${createDate}</td>
+         <td class="news_sender">${sender}</td>
+         <td class="news_tit" data-titleId=${id}>${title}</td>
+         <td><a class="delete_btn" href="javascript:void(0);" data-id=${id}>删除</a></td>
+      </tr>
+</script>
+<!--<script type="text/html" id="pageContent">-->
+    <!--{{if total>0}}-->
+    <!--<div class="goPage">-->
+        <!--<span>GO</span>-->
+        <!--<input type="text" data-big-num="{{total}}" class="go_page_input" data-type="{{typeClassification}}"/>-->
+    <!--</div>-->
+    <!--<ul class="paging clearfix" id="fenye" data-type="{{typeClassification}}">-->
+        <!--<li >< a href=" "  data-type="home" data-num="1" ><span  class="page_home"></span></ a></li>-->
+        <!--<li >< a href="javascript:void(0)"  data-num="{{pageNum-1}}" ><span  class="page_prev"></span></ a></li>-->
+        <!--{{each navigatepageNums as value}}-->
+        <!--{{if value==pageNum}}-->
+        <!--<li class='active'>< a href="javascript:void(0)" data-num="{{value}}" >{{value}} <span class='sr-only'>{{value}}</span></ a></li>-->
+        <!--{{/if}}-->
+        <!--{{if value!=pageNum}}-->
+        <!--<li >< a href="javascript:void(0)" data-num="{{value}}">{{value}} <span class='sr-only'>{{value}}</span></ a></li>-->
+        <!--{{/if}}-->
+        <!--{{/each}}-->
+        <!--<li >< a href="javascript:void(0)"  data-num="{{pageNum+1}}"><span  class="page_next"></span></ a></li>-->
+        <!--<li >< a href="javascript:void(0)" data-type="final"  data-num="{{total}}"><span class="page_final"></span></ a></li>-->
+    <!--</ul>-->
+    <!--<div style="clear:both;"></div>-->
+    <!--{{/if}}-->
+<!--</script>-->
+<script src="../common/script/jquery-1.11.1.min.js"></script>
+<script src="../common/script/bootstrap.min.js"></script>
+<script src="../common/script/jquery.tmpl.js"></script>
+<script src="../common/script/jquery.pagination.js"></script>
+<script src="../common/script/ajaxProvider.js"></script>
+<script src="../common/script/publicHeadNav.js"></script>
+<script src="../js/messageCenter.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+//点击发送
+$(".send_btn").click(function(){
+    console.log($("#textAreaVal").val());
+    console.log($("#onLineCon option:selected").text());
+    console.log($("#addressee option:selected").text());
+});

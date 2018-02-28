@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="百利玛服务系统">
+    <meta charset="UTF-8">
+    <title>百利玛服务系统-登录页面</title>
+    <link rel="stylesheet" href="common/style/base.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div class="login_page">
+    <div class="login_logo"><img src="images/login_logo.png" alt=""></div>
+    <div class="login_main">
+        <h1 class="login_tit">商户登录</h1>
+        <input type="text" placeholder="账户" id="username">
+        <input type="text" placeholder="密码" id="password">
+        <button class="login_btn">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+        <span class="username_img"><img src="images/login_username.png"></span>
+        <span class="psd_img"><img src="images/login_password.png"></span>
+
+    </div>
+    <div class="login_blm">
+        <p>百利玛商户服务系统</p>
+        <p>BERYL-MART BUSINESS SERVICE SYSTEM</p>
+    </div>
+</div>
+<div class="pop_up"></div>
+</body>
+<script src="common/script/jquery-1.11.1.min.js"></script>
+<script src="js/login.js"></script>
+</html>

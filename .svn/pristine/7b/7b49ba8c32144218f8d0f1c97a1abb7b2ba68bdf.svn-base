@@ -1,0 +1,181 @@
+
+/* 基本元素重置*/
+html {
+    overflow-x: hidden;
+}
+
+body,html{height:100%}
+/** 清除内外边距 **/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td,
+img {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/** 设置默认字体 **/
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 12px/1.5 "Microsoft YaHei", SimSun, SimHei;
+    color: #686868;
+    background-color: #FFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+em {
+    font-style: normal;
+}
+
+
+/** 重置列表元素 **/
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+    list-style: none;
+}
+
+
+/** 重置超链接元素 **/
+
+a {
+    text-decoration: none;
+    color: #404242;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+a,
+button,
+input {
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+    /*color:#F40;*/
+}
+
+
+/** 重置图片元素 **/
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+
+/** 重置表格元素 **/
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.float_left {
+    float: left !important;
+}
+
+.float_right {
+    float: right !important;
+}
+/* 重用类样式*/
+/*
+.f_l {
+    float: left !important;
+}
+
+.f_r {
+    float: right !important;
+}
+
+.no_margin {
+    margin: 0 !important;
+}
+
+.no_border {
+    border: none !important;
+}
+
+.no_bg {
+    background: none !important;
+}
+
+.clear_both {
+    clear: both !important;
+}
+
+.display_block {
+    display: block !important;
+}*/
+
+.text_over {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    /*-moz-binding: url('ellipsis.xml#ellipsis');*/
+}
+
+
+
+
+/* nav*/
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+
+
+

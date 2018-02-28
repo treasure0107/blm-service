@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>应收账款</title>
+    <link rel="stylesheet" href="../common/style/base.css">
+    <link rel="stylesheet" href="../common/style/bootstrap.min.css">
+    <link rel="stylesheet" href="../common/style/public.css">
+    <link rel="stylesheet" href="../css/accountCollections.css">
+    <style>
+        .main_con {
+            margin-left: 260px;
+            margin-right: 30px;
+            box-shadow: 2px 0px 16px rgba(197, 197, 199, .5);
+        }
+    </style>
+</head>
+<body>
+<div class="commonMain">
+ <div class="main_con">
+     <div class="account_search">
+         <span class="account_search_t">合同查询</span><span class="key_word">关键字</span>
+         <input type="text" placeholder="请输入关键字" id="keywords">
+         <buttton class="search_btn">查询</buttton>
+     </div>
+ </div>
+</div>
+
+<script src="../common/script/jquery-1.11.1.min.js"></script>
+<script src="../common/script/bootstrap.min.js"></script>
+<script src="../common/script/jquery.tmpl.js"></script>
+<script src="../common/script/ajaxProvider.js"></script>
+<script src="../common/script/publicHeadNav.js"></script>
+<script src="../js/accountCollections.js"></script>
+</body>
+</html>

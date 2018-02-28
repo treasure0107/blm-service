@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商户合同</title>
+    <link rel="stylesheet" href="../common/style/base.css">
+    <link rel="stylesheet" href="../common/style/bootstrap.min.css">
+    <link rel="stylesheet" href="../common/style/public.css">
+    <link rel="stylesheet" href="../css/merchantContract.css">
+</head>
+<body>
+<div class="commonMain">
+    <div class="main_con">
+        <ul class="contract_tit">
+            <li data-contractId="0">商铺合同</li>
+            <li data-contractId="1">广告合同</li>
+            <li data-contractId="2">仓库合同</li>
+            <!--<li>其他合同</li>-->
+        </ul>
+        <div class="contract_content">
+            <div class="contract_search">
+                <span class="contract_search_t">合同查询</span><span class="key_word">关键字</span>
+                <input type="text" placeholder="请输入合同号" id="keywords">
+                <buttton class="search_btn">查询</buttton>
+            </div>
+            <div style="width: 100%; position:relative;">
+                <!--商铺合同-->
+                <table class="contract_table">
+                    <thead>
+                    <tr>
+                        <th>序列</th>
+                        <th>合同号</th>
+                        <th>面积&nbsp;<span style="color:#666;font-size:13px;">(㎡)</span></th>
+                        <th>合同保证金(元)</th>
+                        <th>质保金(元)</th>
+                        <th>水电押金(元)</th>
+                        <th>查看电子合同</th>
+                    </tr>
+                    </thead>
+                    <tbody class="contract_table_list">
+                    <!--<tr>-->
+                    <!--<td>1</td>-->
+                    <!--<td>123456790</td>-->
+                    <!--<td>100</td>-->
+                    <!--<td>10000</td>-->
+                    <!--<td>3000</td>-->
+                    <!--<td>600</td>-->
+                    <!--<td><a class="examineLook" href="javascript:void(0);">查看>></a></td>-->
+                    <!--</tr>-->
+                    </tbody>
+                </table>
+                <!--广告合同-->
+                <table class="ad_contract_table">
+                    <thead>
+                    <tr>
+                        <th>序列</th>
+                        <th>合同号</th>
+                        <th>广告类型</th>
+                        <th>广告位置</th>
+                        <th>广告尺寸</th>
+                        <th>广告数量</th>
+                        <th>合同保证金</th>
+                        <th>电费押金</th>
+                        <th>广告内容</th>
+                        <th>查看电子合同</th>
+                    </tr>
+                    </thead>
+                    <tbody class="ad_contract_table_list">
+                    <!--<tr>-->
+                        <!--<td>1</td>-->
+                        <!--<td>123456790</td>-->
+                        <!--<td>100</td>-->
+                        <!--<td>100</td>-->
+                        <!--<td>600</td>-->
+                        <!--<td>900</td>-->
+                        <!--<td>10000</td>-->
+                        <!--<td>600</td>-->
+                        <!--<td><a class="examineLook" href="javascript:void(0);">查看>></a></td>-->
+                        <!--<td>-->
+                        <!--&lt;!&ndash;<a href="javascript:void(0);" class="unfold_con">展开</a>&ndash;&gt;-->
+                        <!--<button type="button" class="btn btn-default" data-container="body" data-toggle="popover"-->
+                        <!--data-placement="left"-->
+                        <!--data-content="啦啦啦啦啦啦；啊啊啊啊啊啊啦啦啦Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">-->
+                        <!--展开-->
+                        <!--</button>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    </tbody>
+                </table>
+                <!--仓库合同-->
+                <table class="warehouse_contract_table">
+                    <thead>
+                    <tr>
+                        <th>序列</th>
+                        <th>合同号</th>
+                        <th>面积&nbsp;<span style="color:#666;font-size:13px;">(㎡)</span></th>
+                        <th>合同保证金</th>
+                        <th>水电押金</th>
+                        <th>查看电子合同</th>
+                    </tr>
+                    </thead>
+                    <tbody class="warehouse_contract_table_list">
+                    <!--<tr>-->
+                        <!--<td>1</td>-->
+                        <!--<td>123456790</td>-->
+                        <!--<td>100</td>-->
+                        <!--<td>10000</td>-->
+                        <!--<td>600</td>-->
+                        <!--<td><a class="examineLook" href="javascript:void(0);">查看>></a></td>-->
+                    <!--</tr>-->
+                    </tbody>
+                </table>
+                <div class="page_con">
+                    <div class="page_icon">
+                        <!--<a href="javascript:void(0);" class="prevPage">&lt;</a>-->
+                        <!--<span>1</span>-->
+                        <!--<span>2</span>-->
+                        <!--<span>3</span>-->
+                        <!--<span>...</span>-->
+                        <!--<span>12</span>-->
+                        <!--<a href="javascript:void(0);" class="lastPage">&gt;</a>-->
+                        <!--共120条记录-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--商铺合同-->
+<script id="business_contract" type="text/x-jquery-tmpl">
+    <tr>
+        <td class="serial_num">${indexNum}</td>
+        <td>${sn}</td>
+        <td>${area}</td>
+        <td>${contractFee}</td>
+        <td>${premiumQuality}</td>
+        <td>${utilitiesDeposit}</td>
+        <td>
+        <a class="examineLook" data-contractId="${econtract}" href="javascript:void(0);">查看>></a
+        </td>
+    </tr>
+</script>
+
+<!--广告合同-->
+<script id="ad_contract" type="text/x-jquery-tmpl">
+    <tr>
+        <td>${indexNum}</td>
+        <td>${sn}</td>
+        <td>${extVo.type}</td>
+        <td>${extVo.location}</td>
+        <td>${extVo.size}</td>
+        <td>${extVo.count}</td>
+        <td>${contractFee}</td>
+        <td>${utilitiesDeposit}</td>
+        <td><a class="examineLook" data-contractId="${econtract}" href="javascript:void(0);">查看>></a></td>
+        <td>
+            <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
+            data-placement="left"
+            data-content="${extVo.content}">
+            展开
+            </button>
+        </td>
+    </tr>
+</script>
+
+<!--仓库合同-->
+<script id="warehouse_contract" type="text/x-jquery-tmpl">
+    <tr>
+        <td>${indexNum}</td>
+        <td>${sn}</td>
+        <td>${area}</td>
+        <td>${contractFee}</td>
+        <td>${utilitiesDeposit}</td>
+        <td><a class="examineLook" data-contractId="${econtract}" href="javascript:void(0);">查看>></a></td>
+    </tr>
+</script>
+
+<script src="../common/script/jquery-1.11.1.min.js"></script>
+<script src="../common/script/bootstrap.min.js"></script>
+<script src="../common/script/jquery.tmpl.js"></script>
+<script src="../common/script/jquery.pagination.js"></script>
+<script src="../common/script/ajaxProvider.js"></script>
+<script src="../common/script/publicHeadNav.js"></script>
+<script src="../js/merchantContract.js"></script>
+
+</body>
+</html>

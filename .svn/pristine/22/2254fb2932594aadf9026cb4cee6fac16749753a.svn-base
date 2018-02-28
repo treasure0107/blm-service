@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>应收账款</title>
+    <link rel="stylesheet" href="../common/style/base.css">
+    <link rel="stylesheet" href="../common/style/bootstrap.min.css">
+    <link rel="stylesheet" href="../common/style/public.css">
+</head>
+<body>
+<div class="commonMain">
+<h1>应收账款</h1>
+<h1>应收账款</h1>
+<h1>应收账款</h1>
+</div>
+
+<script src="../common/script/jquery-1.11.1.min.js"></script>
+<script src="../common/script/bootstrap.min.js"></script>
+<script src="../common/script/publicHeadNav.js"></script>
+</body>
+</html>

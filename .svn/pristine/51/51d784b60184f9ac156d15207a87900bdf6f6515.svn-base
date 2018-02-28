@@ -1,0 +1,4 @@
+//点击查询
+$(".search_btn").click(function () {
+    console.log($("#keywords").val());
+});

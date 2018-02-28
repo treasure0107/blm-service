@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>应付账款</title>
+    <link rel="stylesheet" href="../common/style/base.css">
+    <link rel="stylesheet" href="../common/style/bootstrap.min.css">
+    <link rel="stylesheet" href="../common/style/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../common/style/public.css">
+    <link rel="stylesheet" href="../css/accountPay.css">
+</head>
+<body>
+<div class="commonMain">
+    <div class="main_con">
+        <div class="account_search">
+            <p class="account_search_t">订单查询</p>
+            <div class="search_con">
+                <span class="key_word">关键字</span>
+                <!--<input type="text" placeholder="请输入合同类型" id="keywords">-->
+                <select id="keywords">
+                    <option value="0">店铺合同</option>
+                    <option value="1">广告合同</option>
+                    <option value="2">仓库合同</option>
+                </select>
+                <span class="word_c">订单时间</span> <input type="text" placeholder="订单时间" class="start_time">
+                <!--<span class="word_c">至于</span> <input type="text" placeholder="结束时间" class="end_time">-->
+                <buttton class="search_btn">查询</buttton>
+            </div>
+        </div>
+        <!--表格内容-->
+        <div class="account_content">
+            <table class="account_table">
+                <thead>
+                <tr>
+                    <th>序列</th>
+                    <th>月份</th>
+                    <th>费用类型</th>
+                    <th>租金费用(元)</th>
+                    <th>管理费用(元)</th>
+                    <th>其他费用(元)</th>
+                    <th>合计金额(元)</th>
+                    <th>查看明细</th>
+                </tr>
+                </thead>
+                <tbody class="pay_table_con">
+                <!--<tr>-->
+                    <!--<td class="serial_num">1</td>-->
+                    <!--<td>2008001000100</td>-->
+                    <!--<td>门店合同</td>-->
+                    <!--<td>1000</td>-->
+                    <!--<td>1000</td>-->
+                    <!--<td>10000,000</td>-->
+                    <!--<td>1000</td>-->
+                    <!--<td><a class="examineLook" href="javascript:void(0);">查看>></a></td>-->
+                <!--</tr>-->
+                </tbody>
+            </table>
+            <div class="popUpData" style="display: none;text-align: center;padding-top: 20px;">暂时还没有数据哦~</div>
+            <div class="account_foot">
+                <!--<span class="account_total">合计：10000000,000</span>-->
+                <div class="page_icon">
+                    <!--<a href="javascript:void(0);" class="prevPage">&lt;</a>-->
+                    <!--<span>1</span>-->
+                    <!--<span>2</span>-->
+                    <!--<span>3</span>-->
+                    <!--<span>...</span>-->
+                    <!--<span>12</span>-->
+                    <!--<a href="javascript:void(0);" class="lastPage">&gt;</a>-->
+                    <!--共120条记录-->
+                </div>
+            </div>
+        </div>
+        <!--弹窗-->
+        <div class="account_popup">
+            <h2>商户应缴款清单</h2>
+            <p class="unit_y">单位(元)</p>
+            <span class="delImg"><img src="../images/pay_icon_turn_off.png" alt=""></span>
+            <ul class="account_popup_main">
+                <li>
+                    <div class="account_popup_tit">合同款</div>
+                    <div class="account_popup_c">
+                        <p class="account_c">合同保证金</p>
+                        <p class="account_deposit"></p>
+                    </div>
+                    <div class="account_popup_c">
+                        <p class="account_c">水电押金</p>
+                        <p class="hydroelectric_deposit"></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="account_popup_tit">本月费用</div>
+                    <div class="account_popup_c">
+                        <p class="account_c">租金</p>
+                        <p class="rental"></p>
+                    </div>
+                    <div class="account_popup_c">
+                        <p class="account_c">管理费</p>
+                        <p class="management_cost"></p>
+                    </div>
+                    <div class="account_popup_c">
+                        <p class="account_c">水电费</p>
+                        <p class="utility_bills"></p>
+                    </div>
+                    <div class="account_popup_c">
+                        <p class="account_c">备注</p>
+                        <p><a href="javascript:void(0);" class="remark_btn month_fee" style=" color:#7b7de4;">查看</a></p>
+                    </div>
+                </li>
+                <li class="remark_main">
+                    <div>
+                        <!--<img src="../images/pay_icon_check.png" alt="">-->
+                        <span class="propOffImg"><img src="../images/pop_up_icon_turn_off.png" alt=""></span>
+                        <div class="detailsRemark"> </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="account_popup_tit">押金</div>
+                    <div class="account_popup_c">
+                        <p class="account_c">装修押金</p>
+                        <p class="renovationDeposit"></p>
+                    </div>
+                    <div class="account_popup_c">
+                        <p class="account_c">手册押金</p>
+                        <p class="manualDeposit"></p>
+                    </div>
+                    <div class="account_popup_c">
+                        <p class="account_c">电卡押金</p>
+                        <p class="electricDeposit"></p>
+                    </div>
+                    <div class="account_popup_c">
+                        <p class="account_c">毛坯恢复押金</p>
+                        <p>1000.00</p>
+                    </div>
+                    <div class="account_popup_c">
+                        <p class="account_c">入职保证押金</p>
+                        <p class="recoveryDeposit"></p>
+                    </div>
+                    <div class="account_popup_c">
+                        <p class="account_c">工牌押金</p>
+                        <p class="workCardDeposit"></p>
+                    </div>
+                    <div class="account_popup_c">
+                        <p class="account_c">其它押金</p>
+                        <p class="otherDeposit"></p>
+                    </div>
+                    <div class="account_popup_c">
+                        <p class="account_c">备注</p>
+                        <p><a href="javascript:void(0);" class="remark_btn other_deposit" style=" color:#7b7de4;">查看</a></p>
+                    </div>
+                </li>
+                <li class="remark_main" data-accountId="2">
+                    <div>
+                        <!--<img src="../images/pay_icon_check.png" alt="">-->
+                        <span class="propOffImg"><img src="../images/pop_up_icon_turn_off.png" alt=""></span>
+                        <div class="otherDepositRemark"></div>
+                    </div>
+                </li>
+                <li class="disposable_account">
+                    <div class="account_popup_tit">一次性费用</div>
+                    <div class="disposable_account_o">
+                        <div class="account_popup_c">
+                            <p class="account_c">灭火器</p>
+                            <p class="fireExtinguisher"></p>
+                        </div>
+                        <div class="account_popup_c">
+                            <p class="account_c">工卡费</p>
+                            <p class="workCard"></p>
+                        </div>
+                        <div class="account_popup_c">
+                            <p class="account_c">营业员制服</p>
+                            <p class="salesmanUniform"></p>
+                        </div>
+                        <div class="account_popup_c">
+                            <p class="account_c">水晶牌</p>
+                            <p class="crystalCard"></p>
+                        </div>
+                        <div class="account_popup_c">
+                            <p class="account_c">门牌费</p>
+                            <p class="doorCard"></p>
+                        </div>
+                        <div class="account_popup_c">
+                            <p class="account_c">吊旗桁架</p>
+                            <p class="hoistingTrusses"></p>
+                        </div>
+                        <div class="account_popup_c">
+                            <p class="account_c">应急灯</p>
+                            <p class="emergencyLamp"></p>
+                        </div>
+                    </div>
+                    <div class="disposable_account_b"></div>
+                    <div class="disposable_account_o">
+                        <div class="account_popup_c">
+                            <p class="account_c">培训费</p>
+                            <p class="trainingFee"></p>
+                        </div>
+                        <div class="account_popup_c">
+                            <p class="account_c">标签价</p>
+                            <p class="priceTag"></p>
+                        </div>
+                        <div class="account_popup_c">
+                            <p class="account_c">财产保险</p>
+                            <p class="propertyInsurance"></p>
+                        </div>
+                        <div class="account_popup_c">
+                            <p class="account_c">占道费</p>
+                            <p class="tollLane"></p>
+                        </div>
+                        <div class="account_popup_c">
+                            <p class="account_c">围板围布</p>
+                            <p class="enclosureFee"></p>
+                        </div>
+                        <div class="account_popup_c">
+                            <p class="account_c">其他费用</p>
+                            <p class="otherFee"></p>
+                        </div>
+                        <div class="account_popup_c">
+                            <p class="account_c">备注</p>
+                            <p><a href="javascript:void(0);" class="remark_btn other_feeRemark" style="color:#7b7de4;">查看</a></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="remark_main" data-accountId="3">
+                    <div>
+                        <!--<img src="../images/pay_icon_check.png" alt="">-->
+                        <span class="propOffImg"><img src="../images/pop_up_icon_turn_off.png" alt=""></span>
+                        <div class="otherFeeRemark"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="account_popup_tit">罚款类</div>
+                    <div class="account_popup_c">
+                        <p class="account_c">罚款金额</p>
+                        <p class="penaltyAmount"></p>
+                    </div>
+                    <div class="account_popup_c">
+                        <p class="account_c">备注</p>
+                        <p><a href="javascript:void(0);" class="remark_btn penalty_amount" style=" color:#7b7de4;">查看</a></p>
+                    </div>
+                </li>
+                <li class="remark_main" data-accountId="4">
+                    <div>
+                        <!--<img src="../images/pay_icon_check.png" alt="">-->
+                        <span class="propOffImg"><img src="../images/pop_up_icon_turn_off.png" alt=""></span>
+                        <div class="penaltyAmountRemark"></div>
+                    </div>
+                </li>
+            </ul>
+            <!--<div class="total_price">合计：<span>100080.00</span></div>-->
+        </div>
+    </div>
+</div>
+<div class="pop_up"></div>
+<script id="payList" type="text/x-jquery-tmpl">
+    <tr>
+        <td class="serial_num">${indexNum}</td>
+        <td>${months}</td>
+        {{if type=="0"}}
+        <td>店铺合同</td>
+        {{/if}}
+        {{if type=="1"}}
+        <td>广告合同</td>
+         {{/if}}
+        {{if type=="2"}}
+        <td>仓库合同</td>
+         {{/if}}
+        <td>${rent_amount}</td>
+        <td>${charges_amount}</td>
+        <td>${otherTotal}</td>
+        <td>${total}</td>
+        <td><a class="examineLook" href="javascript:void(0);" data-id="${id}" data-rental="${rent_amount}" data-charges="${charges_amount}">查看>></a></td>
+    </tr>
+</script>
+
+<script src="../common/script/jquery-1.11.1.min.js"></script>
+<script src="../common/script/bootstrap.min.js"></script>
+<script src="../common/script/jquery.tmpl.js"></script>
+<script src="../common/script/bootstrap-datetimepicker.min.js"></script>
+<script src="../common/script/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="../common/script/jquery.pagination.js"></script>
+<script src="../common/script/ajaxProvider.js"></script>
+<script src="../common/script/publicHeadNav.js"></script>
+<script src="../js/accountPay.js"></script>
+</body>
+</html>

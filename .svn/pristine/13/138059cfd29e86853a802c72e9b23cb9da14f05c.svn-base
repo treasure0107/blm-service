@@ -1,0 +1,203 @@
+/*弹窗*/
+.pop_up {
+    position: fixed;
+    top: -160px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    font-size: 16px;
+    color: #fff;
+    width: 199px;
+    text-align: center;
+    height: 52px;
+    line-height: 52px;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    cursor: pointer;
+    display: none;
+    z-index: 199999999999999;
+}
+.commonMain {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: "Microsoft YaHei";
+    /*min-height: calc(100vh - 142px);*/
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: #888;
+}
+
+.header_con {
+    width: 100%;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    box-shadow: 0px 0px 16px rgba(197, 197, 199, .5);
+    /*margin-left: 230px;*/
+    /*z-index: 1000;*/
+    padding-left: 230px;
+}
+
+.logo {
+    display: inline-block;
+    width: 230px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #7b7de4 !important;
+}
+
+.merchant_name {
+    display: inline-block;
+    font-size: 14px;
+    color: #666;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+}
+
+.phone_num, .icon_setting, .icon_message, .turn_off {
+    display: inline-block;
+    position: absolute;
+
+}
+
+.phone_n {
+    font-size: 14px;
+    color: #ff6e4b;
+    margin-left: 6px;
+}
+
+.phone_num {
+    right: 186px;
+}
+
+.icon_setting {
+    right: 128px;
+}
+
+.icon_message {
+    right: 88px;
+}
+
+.turn_off {
+    right: 50px;
+}
+
+/*侧边栏*/
+.sidebar_nav {
+    width: 230px;
+    height: 100%;
+    background-color: #505773;
+    /*float: left;*/
+    /*min-height: calc(100vh - 142px);*/
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.sidebar_nav li {
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+}
+
+.sidebar_nav li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar_nav li span:last-child {
+    font-size: 14px;
+    color: #fff;
+    padding-left: 20px;
+    position: absolute;
+    top: 3px;
+}
+
+.nav_img {
+    display: inline-block;
+    margin-left: 69px;
+    padding-top: 1px;
+}
+
+.sidebar_nav li:hover {
+    background-color: #61698b;
+}
+
+.merchant_details {
+    display: block;
+    height: 100px;
+    margin: 20px 30px 20px 260px;
+    box-shadow: 3px 0px 16px rgba(197, 197, 199, .5);
+    overflow: hidden;
+
+}
+
+.merchant_tit {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    padding-top: 16px;
+    padding-left: 20px;
+}
+
+.details_con {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.details_con .iconImg {
+    margin-right: 5px;
+}
+
+.business_brand {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.navActive {
+    background-color: #484e66;
+}
+
+
+/*分页*/
+
+.page_icon {
+    font-size: 14px;
+    position: absolute;
+    top: 26px;
+    right: 69px;
+    color: #888;
+}
+/*分页插件样式*/
+.page_icon .prev, .page_icon .next, .page_icon span, .page_icon a {
+    display: inline-block;
+    font-size: 16px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.page_icon .active {
+    background-color: #7b7de4;
+    color: #fff;
+}

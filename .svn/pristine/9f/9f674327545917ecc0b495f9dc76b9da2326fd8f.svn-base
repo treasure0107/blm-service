@@ -1,0 +1,27 @@
+//点击发送
+var oldContent=null;
+$(".send_btn").click(function(){
+    var type=$("#onLineCon option:selected").val();
+    var content=$("#textAreaVal").val();
+    var _self=$(this);
+    if(oldContent==content){
+        $(".pop_up").text("信息已经提交").fadeIn(200).fadeOut(3000);
+        _self.prop("disabled","disabled").css("background-color","#ccc");
+        return false;
+    }
+    // var flag=true;
+    if (content.length >= 100) {
+        $(".pop_up").text("内容不能超过100个字").fadeIn(200).fadeOut(1000);
+        return;
+    }
+    if(content){
+        merchantFeedbackSave(type,content, function(data){
+            oldContent=content;
+            $(".pop_up").text("发送成功").fadeIn(200).fadeOut(1000);
+        }, function(){
+            $(".pop_up").text("发送失败").fadeIn(200).fadeOut(1000);
+        })
+    }else{
+        $(".pop_up").text("内容不能为空").fadeIn(200).fadeOut(1000);
+    }
+});

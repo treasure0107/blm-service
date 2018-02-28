@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="百利玛服务系统">
+    <meta charset="UTF-8">
+    <title>百利玛服务系统-首页</title>
+    <link rel="stylesheet" href="../common/style/base.css">
+    <link rel="stylesheet" href="../common/style/bootstrap.min.css">
+    <link rel="stylesheet" href="../common/style/public.css">
+</head>
+<body>
+<div class="commonMain">
+   <h1>首页</h1>
+   <h1>首页</h1>
+   <h1>首页</h1>
+    <div class="main"></div>
+</div>
+</body>
+<script src="../common/script/jquery-1.11.1.min.js"></script>
+<script src="../common/script/bootstrap.min.js"></script>
+<script src="../common/script/publicHeadNav.js"></script>
+<script src="../js/index.js"></script>
+</html>

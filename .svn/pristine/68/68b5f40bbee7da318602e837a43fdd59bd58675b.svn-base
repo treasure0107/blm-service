@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>连线百利玛</title>
+    <link rel="stylesheet" href="../common/style/base.css">
+    <link rel="stylesheet" href="../common/style/bootstrap.min.css">
+    <link rel="stylesheet" href="../common/style/public.css">
+    <link rel="stylesheet" href="../css/onLineBlm.css">
+</head>
+<body>
+<div class="commonMain">
+    <div class="main_con">
+        <div class="onLine_con">
+            <h2>尊敬的商户，欢迎您连线百利玛</h2>
+            <div class="onLine_content onLine_c">
+                <span class="onLine_tit">收件人</span>
+                <select id="addressee">
+                    <option value="">百利玛</option>
+                </select>
+            </div>
+            <div class="onLine_c">
+                <span class="onLine_tit">连线内容</span>
+                <select id="onLineCon">
+                    <option value="">我要投诉</option>
+                    <option value="">我要报账</option>
+                    <option value="">我要建议</option>
+                </select>
+            </div>
+            <div class="onLine_c onLine_Desc">
+                <span class="onLine_tit">内容描述</span>
+                <textarea name="" rows="10" id="textAreaVal"></textarea>
+            </div>
+            <button class="send_btn">发送</button>
+        </div>
+    </div>
+</div>
+
+<script src="../common/script/jquery-1.11.1.min.js"></script>
+<script src="../common/script/bootstrap.min.js"></script>
+<script src="../common/script/jquery.tmpl.js"></script>
+<script src="../common/script/ajaxProvider.js"></script>
+<script src="../common/script/publicHeadNav.js"></script>
+<script src="../js/onLineBlm.js"></script>
+</body>
+</html>

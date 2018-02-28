@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>应付账款</title>
+    <link rel="stylesheet" href="../common/style/base.css">
+    <link rel="stylesheet" href="../common/style/bootstrap.min.css">
+    <link rel="stylesheet" href="../common/style/public.css">
+    <link rel="stylesheet" href="../css/accountPay.css">
+</head>
+<body>
+<div class="commonMain">
+    <div class="main_con">
+        <div class="account_search">
+            <p class="account_search_t">订单查询</p>
+            <div class="search_con">
+                <span class="key_word">关键字</span>
+                <input type="text" placeholder="请输入关键字" id="keywords">
+                <span class="word_c">订单时间</span> <input type="text" placeholder="订单时间">
+                <span class="word_c">至于</span> <input type="text" placeholder="结束时间">
+                <buttton class="search_btn">查询</buttton>
+            </div>
+        </div>
+        <!--表格内容-->
+        <div class="account_content">
+            <table class="account_table">
+                <thead>
+                <tr>
+                    <th>序列</th>
+                    <th>月份</th>
+                    <th>租金费用</th>
+                    <th>管理费用</th>
+                    <th>水电费</th>
+                    <th>其他费用</th>
+                    <th>合计金额</th>
+                    <th>查看明细</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td  class="serial_num">1</td>
+                    <td>2008001000100</td>
+                    <td>100000</td>
+                    <td>1000</td>
+                    <td>1000</td>
+                    <td>10000,000</td>
+                    <td>1000</td>
+                    <td><a class="examineLook" href="javascript:void(0);">查看>></a></td>
+                </tr>
+
+                <tr>
+                    <td  class="serial_num">2</td>
+                    <td>2008001000100</td>
+                    <td>100000</td>
+                    <td>1000</td>
+                    <td>1000</td>
+                    <td>10000,000</td>
+                    <td>1000</td>
+                    <td><a class="examineLook" href="javascript:void(0);">查看>></a></td>
+                </tr>
+                <tr>
+                    <td  class="serial_num">3</td>
+                    <td>2008001000100</td>
+                    <td>100000</td>
+                    <td>1000</td>
+                    <td>1000</td>
+                    <td>10000,000</td>
+                    <td>1000</td>
+                    <td><a class="examineLook" href="javascript:void(0);">查看>></a></td>
+                </tr>
+                <tr>
+                    <td  class="serial_num">4</td>
+                    <td>2008001000100</td>
+                    <td>100000</td>
+                    <td>1000</td>
+                    <td>1000</td>
+                    <td>10000,000</td>
+                    <td>1000</td>
+                    <td><a class="examineLook" href="javascript:void(0);">查看>></a></td>
+                </tr>
+                <tr>
+                    <td  class="serial_num">5</td>
+                    <td>2008001000100</td>
+                    <td>100000</td>
+                    <td>1000</td>
+                    <td>1000</td>
+                    <td>10000,000</td>
+                    <td>1000</td>
+                    <td><a class="examineLook" href="javascript:void(0);">查看>></a></td>
+                </tr>
+                <tr>
+                    <td  class="serial_num">6</td>
+                    <td>2008001000100</td>
+                    <td>100000</td>
+                    <td>1000</td>
+                    <td>1000</td>
+                    <td>10000,000</td>
+                    <td>1000</td>
+                    <td><a class="examineLook" href="javascript:void(0);">查看>></a></td>
+                </tr>
+                <tr>
+                    <td  class="serial_num">7</td>
+                    <td>2008001000100</td>
+                    <td>100000</td>
+                    <td>1000</td>
+                    <td>1000</td>
+                    <td>10000,000</td>
+                    <td>1000</td>
+                    <td><a class="examineLook" href="javascript:void(0);">查看>></a></td>
+                </tr>
+                <tr>
+                    <td  class="serial_num">8</td>
+                    <td>2008001000100</td>
+                    <td>100000</td>
+                    <td>1000</td>
+                    <td>1000</td>
+                    <td>10000,000</td>
+                    <td>1000</td>
+                    <td><a class="examineLook" href="javascript:void(0);">查看>></a></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="account_foot">
+                <!--<span class="account_total">合计：10000000,000</span>-->
+                <div class="page_icon">
+                    <a href="javascript:void(0);" class="prevPage">&lt;</a>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>...</span>
+                    <span>12</span>
+                    <a href="javascript:void(0);" class="lastPage">&gt;</a>
+                    共120条记录
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="../common/script/jquery-1.11.1.min.js"></script>
+<script src="../common/script/bootstrap.min.js"></script>
+<script src="../common/script/jquery.tmpl.js"></script>
+<script src="../common/script/ajaxProvider.js"></script>
+<script src="../common/script/publicHeadNav.js"></script>
+<script src="../js/accountPay.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+//点击查询
+$(".search_btn").click(function () {
+    console.log($("#keywords").val());
+});
+//点击查看
+$(".examineLook").click(function () {
+  alert(111)
+});

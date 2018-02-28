@@ -1,0 +1,17 @@
+//点击合同分类
+$(".contract_tit li").click(function () {
+    $(this).addClass("titActive").siblings().removeClass("titActive");
+});
+
+//点击查询
+$(".search_btn").click(function () {
+    console.log($("#keywords").val());
+});
+
+//分页
+$('.page_icon').pagination({
+    showData:8,      //每页显示的条数
+    count:2,
+    coping:true,
+    keepShowPN:true
+});

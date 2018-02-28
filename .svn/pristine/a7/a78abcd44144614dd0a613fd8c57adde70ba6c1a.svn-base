@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="百利玛服务系统">
+    <meta charset="UTF-8">
+    <title>百利玛服务系统-首页</title>
+    <link rel="stylesheet" href="../common/style/base.css">
+    <link rel="stylesheet" href="../common/style/bootstrap.min.css">
+    <link rel="stylesheet" href="../common/style/public.css">
+    <style>
+        /*.main_con {*/
+            /*height: 739px;*/
+            /*height: 78%;*/
+            /*margin-left: 260px;*/
+            /*margin-right: 30px;*/
+            /*box-shadow: 2px 0px 16px rgba(197, 197, 199, .5);*/
+            /*background-image: url("../images/home_img.png");*/
+            /*background-size: 100% 100%;*/
+            /*background-repeat: no-repeat;*/
+
+        /*}*/
+        /*.main_con{*/
+            /*display: block;*/
+            /*height: 100%;*/
+            /*margin-left: 260px;*/
+            /*border:1px solid #ccc;*/
+            /*margin-right: 30px;*/
+
+        /*}*/
+      .main_con{
+          width: 1034px;
+          height: 132px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -419px;
+          /*text-align: center;*/
+          background-image: url("../images/index_text.png");
+          background-repeat: no-repeat;
+      }
+    </style>
+</head>
+<body>
+<div class="commonMain">
+    <div class="main_con">
+        <!--<img src="../images/home_img_backgroud.png" alt="">-->
+        <!--<h1>欢迎来到百利玛商户服务系统</h1>-->
+        <!--<p>WELCOME TO BERYL-MART BUSINESS SERVICE SYSTEM</p>-->
+          <!--<img src="../images/index_text.png" alt="">-->
+    </div>
+</div>
+<div class="pop_up"></div>
+</body>
+<script src="../common/script/jquery-1.11.1.min.js"></script>
+<script src="../common/script/bootstrap.min.js"></script>
+<script src="../common/script/jquery.tmpl.js"></script>
+<script src="../common/script/ajaxProvider.js"></script>
+<script src="../common/script/publicHeadNav.js"></script>
+
+</html>

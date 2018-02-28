@@ -1,0 +1,19 @@
+
+//点击登录
+$(".login_btn").click(function(){
+    var username=$("#username").val();
+    var password=$("#password").val();
+    console.log(username);
+    console.log(password);
+});
+//按回车登录
+$(".login_page").on("keydown","input",function(e){
+    var keyCode=e.keyCode;
+    if(keyCode==13){
+        if($(this).next()){
+            $(this).next().focus();
+            return;
+        }
+        $(".login_btn").click();
+    }
+});

@@ -1,0 +1,86 @@
+.main_con {
+    margin-left: 260px;
+    margin-right: 30px;
+    box-shadow: 2px 0px 16px rgba(197, 197, 199, .5);
+}
+
+h2,textarea {
+    margin: 0;
+    padding: 0;
+}
+
+select {
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    border: solid 1px #ddd;
+    /*很关键：将默认的select选择框样式清除*/
+    /*appearance: none;*/
+    /*-moz-appearance: none;*/
+    /*-webkit-appearance: none;*/
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    padding-right:6px;
+    margin-left:6px;
+}
+.onLine_con {
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.onLine_con h2 {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    color:#333;
+    text-align: center;
+    border-bottom:1px solid #ddd;
+}
+
+.onLine_con .onLine_tit{
+    font-size: 14px;
+    color:#333;
+    display: inline-block;
+    width: 60px;
+    /*font-weight: bold;*/
+}
+
+.onLine_content{
+    margin-top: 24px;
+
+}
+
+.onLine_c{
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.onLine_c select{
+    width: 170px;
+    height: 32px;
+}
+
+.onLine_Desc textarea{
+    width: 710px;
+    height: 330px;
+    border:1px solid #ddd;
+    vertical-align: top;
+    resize:none;
+    font-size:14px;
+    color:#333;
+    padding: 20px;
+    background-color: #f7f7f7;
+    margin-left: 6px;
+    margin-top: 4px;
+}
+.send_btn{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #7b7de4;
+    font-size:14px;
+    color:#fff;
+    text-align:center;
+    border-radius:3px;
+    margin-top: 16px;
+    margin-left: 460px;
+}

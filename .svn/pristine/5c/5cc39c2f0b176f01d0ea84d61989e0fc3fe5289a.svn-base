@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>应收账款</title>
+    <link rel="stylesheet" href="../common/style/base.css">
+    <link rel="stylesheet" href="../common/style/bootstrap.min.css">
+    <link rel="stylesheet" href="../common/style/public.css">
+    <link rel="stylesheet" href="../css/accountCollections.css">
+</head>
+<body>
+<div class="commonMain">
+    <div class="main_con">
+        <div class="account_search">
+            <p class="account_search_t">订单查询</p>
+            <div class="search_con">
+                <span class="key_word">关键字</span>
+                <input type="text" placeholder="请输入关键字" id="keywords">
+                <span class="word_c">订单时间</span> <input type="text" placeholder="订单时间">
+                <span class="word_c">至于</span> <input type="text" placeholder="结束时间">
+                <buttton class="search_btn">查询</buttton>
+            </div>
+        </div>
+        <!--表格内容-->
+        <div class="account_content">
+            <table class="account_table">
+                <thead>
+                <tr>
+                    <th>序列</th>
+                    <th>年收款编号</th>
+                    <th>销售日期</th>
+                    <th>付款方式</th>
+                    <th>付款额度</th>
+                    <th>付款金额</th>
+                    <th>顾客姓名</th>
+                    <th>顾客电话</th>
+                    <th>顾客地址</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2008001000100</td>
+                    <td>20080908</td>
+                    <td>刷卡</td>
+                    <td>全款</td>
+                    <td>10000,000</td>
+                    <td>张三</td>
+                    <td>18966998899</td>
+                    <td>广东省深圳市宝安北路百利
+                        玛厨卫中心5楼12号</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>2008001000100</td>
+                    <td>20080908</td>
+                    <td>刷卡</td>
+                    <td>全款</td>
+                    <td>10000,000</td>
+                    <td>张三</td>
+                    <td>18966998899</td>
+                    <td>广东省深圳市宝安北路百利
+                        玛厨卫中心5楼12号</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2008001000100</td>
+                    <td>20080908</td>
+                    <td>刷卡</td>
+                    <td>全款</td>
+                    <td>10000,000</td>
+                    <td>张三</td>
+                    <td>18966998899</td>
+                    <td>广东省深圳市宝安北路百利
+                        玛厨卫中心5楼12号</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>2008001000100</td>
+                    <td>20080908</td>
+                    <td>刷卡</td>
+                    <td>全款</td>
+                    <td>10000,000</td>
+                    <td>张三</td>
+                    <td>18966998899</td>
+                    <td>广东省深圳市宝安北路百利
+                        玛厨卫中心5楼12号</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>2008001000100</td>
+                    <td>20080908</td>
+                    <td>刷卡</td>
+                    <td>全款</td>
+                    <td>10000,000</td>
+                    <td>张三</td>
+                    <td>18966998899</td>
+                    <td>广东省深圳市宝安北路百利
+                        玛厨卫中心5楼12号</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>2008001000100</td>
+                    <td>20080908</td>
+                    <td>刷卡</td>
+                    <td>全款</td>
+                    <td>10000,000</td>
+                    <td>张三</td>
+                    <td>18966998899</td>
+                    <td>广东省深圳市宝安北路百利
+                        玛厨卫中心5楼12号</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2008001000100</td>
+                    <td>20080908</td>
+                    <td>刷卡</td>
+                    <td>全款</td>
+                    <td>10000,000</td>
+                    <td>张三</td>
+                    <td>18966998899</td>
+                    <td>广东省深圳市宝安北路百利
+                        玛厨卫中心5楼12号</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>2008001000100</td>
+                    <td>20080908</td>
+                    <td>刷卡</td>
+                    <td>全款</td>
+                    <td>10000,000</td>
+                    <td>张三</td>
+                    <td>18966998899</td>
+                    <td>广东省深圳市宝安北路百利
+                        玛厨卫中心5楼12号</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="account_foot">
+                <span class="account_total">合计：10000000,000</span>
+                    <div class="page_icon">
+                        <a href="javascript:void(0);" class="prevPage">&lt;</a>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>...</span>
+                        <span>12</span>
+                        <a href="javascript:void(0);" class="lastPage">&gt;</a>
+                        共120条记录
+                    </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="../common/script/jquery-1.11.1.min.js"></script>
+<script src="../common/script/bootstrap.min.js"></script>
+<script src="../common/script/jquery.tmpl.js"></script>
+<script src="../common/script/ajaxProvider.js"></script>
+<script src="../common/script/publicHeadNav.js"></script>
+<script src="../js/accountCollections.js"></script>
+</body>
+</html>
